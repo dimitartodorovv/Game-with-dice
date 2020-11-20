@@ -14,12 +14,12 @@ var scores,roundScore,activePlayer,gamePLaying,twoSixes;
       document.getElementById('dice-2').src = 'dice-' + dice2 + '.png';
 
 
-    /*if (dice === 6 && twoSixes === 6) {
+    if (dice === 6 && twoSixes === 6) {
          scores[activePlayer] = 0;
          document.querySelector('#score-' + activePlayer).textContent = '0';
          nextPlayer();
     }
-  */
+  
     if (dice1 !== 1 && dice2 !== 1) {
       roundScore += dice1 + dice2;
       document.querySelector('#current-' + activePlayer).textContent = roundScore;
