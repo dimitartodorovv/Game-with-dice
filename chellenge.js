@@ -14,12 +14,12 @@ var scores,roundScore,activePlayer,gamePLaying,twoSixes;
       document.getElementById('dice-2').src = 'dice-' + dice2 + '.png';
 
 
-    if (dice === 6 && twoSixes === 6) {
+    /*if (dice === 6 && twoSixes === 6) {
          scores[activePlayer] = 0;
          document.querySelector('#score-' + activePlayer).textContent = '0';
          nextPlayer();
     }
-  
+  */
     if (dice1 !== 1 && dice2 !== 1) {
       roundScore += dice1 + dice2;
       document.querySelector('#current-' + activePlayer).textContent = roundScore;
@@ -44,16 +44,8 @@ document.querySelector('.btn-hold').addEventListener('click', function () {
 
     document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
     
-    var input = document.querySelector('.final-score').value;
-    var winingScore;
-
-    if (input) {
-         winingScore = input;
-    }else {
-        winingScore = 100;
-    }
     
-    if (scores[activePlayer] >= winingScore) {
+    if (scores[activePlayer] >= 100) {
         document.querySelector('#name-' + activePlayer).textContent = 'Winner!';
         document.getElementById('dice-1').style.display ='none';
         document.getElementById('dice-2').style.display ='none';

@@ -36,9 +36,9 @@
 
 .final-score:focus {outline: none;}
 
-#dice-1 {top: 200px;}
+#dice-1 {top: 100px;}
 
-/* #dice-2 {top: 250px;} */
+#dice-2 {top: 250px;}
 
 * {
     margin: 0;
@@ -125,7 +125,7 @@ body {
 .active .player-name { 
     font-weight: 300;
     font-weight: bold;
-    color: #0529FB;
+    color: #217cf3a9;
  }
 
 .active .player-name::after {
